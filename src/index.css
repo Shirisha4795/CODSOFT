@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fc;
+}
+
+/* Navbar */
+
+.navbar {
+  transition: 0.4s;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 18px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: yellow !important;
+  transform: scale(1.1);
+}
+
+/* Page Animation */
+
+.page-animation {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+/* Hero Section */
+
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    #0d6efd,
+    #6610f2
+  );
+
+  color: white;
+
+  padding: 100px 0;
+
+  text-align: center;
+}
+
+/* Cards */
+
+.card {
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+
+.btn {
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Form Inputs */
+
+.form-control {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 10px #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Dashboard */
+
+.dashboard-card {
+  transition: 0.4s;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.03);
+}
