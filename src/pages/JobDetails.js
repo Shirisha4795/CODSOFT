@@ -20,13 +20,9 @@ function JobDetails() {
     resume: null
 
   });
-
   useEffect(() => {
-
     fetchJob();
-
-  }, []);
-
+  }, [fetchJob]);
   const fetchJob = async () => {
 
     try {
