@@ -20,9 +20,10 @@ function JobDetails() {
     resume: null
 
   });
-  useEffect(() => {
-    fetchJob();
-  }, [fetchJob]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  fetchJob();
+}, []);
   const fetchJob = async () => {
 
     try {
